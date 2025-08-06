@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>R30 Kota - KASI NTON NTON</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+     <script>
+    function confirmOrder(link) {
+      alert("⚠️ IMPORTANT: Please include in your WhatsApp order:\n\n1️⃣ Proof of payment.\n2️⃣ Quantity of items.\n3️⃣ Pickup or collection time.\n4️⃣ List of any ingredients to remove (e.g., no cheese, no sauce).\n\n✅ Failure to include this information may delay your order.");
+      window.location.href = link;
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <img src="images/background.jpeg" alt="Logo" class="logo">
+    <h1>KASI NTON NTON</h1>
+  </header>
+
+  <nav class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="kotas.html" class="active">Kotas</a>
+    <a href="chips.html">Chips</a>
+  </nav>
+
+  <div class="container">
+    <h2>R30 Kota</h2>
+    <p>Chips, chakalaka, polony, cheese, russian</p>
+    
+      <!-- Warning Box -->
+    <div class="warning-box">
+      ⚠️ IMPORTANT: Please include proof of payment, quantity, pickup/collection time, 
+      and any items to remove (e.g., no cheese).  
+      <br><strong>Failure to include this may delay your order.</strong>
+    </div>
+
+    <!-- WhatsApp Button -->
+    <button class="button" onclick="confirmOrder('https://wa.me/27712952594?text=Hi%20I%20would%20like%20to%20order%20the%20R25%20Kota')">
+      Order on WhatsApp
+    </button>
+  </div>
+</body>
+</html>
